@@ -1,8 +1,12 @@
+@use "../base/base" as *
+@use "../base/variables" as *
+
 .product-card
     grid-column: 2/12
     grid-row: 2/3
     display: grid
     grid-template-columns: repeat(12, 1fr)
+    row-gap: 3rem
     @include respond(tablet)
         gap: 2rem
     @include respond(mobile)

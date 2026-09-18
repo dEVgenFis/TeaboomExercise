@@ -1,3 +1,5 @@
+@use "base" as *
+
 @font-face
     font-family: "Roboto"
     src: local("Roboto-Regular")
@@ -61,3 +63,20 @@ span
             font-size: 2.5rem
             @include respond(laptop)
                 font-size: 1.9rem
+
+.warning
+    font-size: 3rem
+    text-align: center
+    @include respond(laptop)
+        font-size: 2.5rem
+    &__text span
+        font-size: 3rem
+        font-family: "Roboto"
+        font-weight: 400
+        @include respond(laptop)
+            font-size: 1.8rem
+        @include respond(mobile)
+            font-size: 1.6rem
+    &__text a
+        @include respond(laptop)
+            font-size: 2rem
