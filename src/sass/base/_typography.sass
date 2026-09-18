@@ -1,0 +1,53 @@
+@font-face
+    font-family: "Roboto"
+    src: local("Roboto-Regular")
+    src: url("../fonts/Roboto-Regular.ttf")
+    font-weight: regular
+    font-style: normal
+    font-display: swap
+
+html
+    font-size: 62.5%
+
+span
+    font-size: 1.4rem
+    font-weight: 600
+
+.product-card
+    &__name
+        font-size: 3.2rem
+    &__server-category, &__server-weight
+        font-size: 1.4rem
+        font-weight: 600
+    &__current-cost
+        span
+            font-size: unset
+        font-size: 1.9rem
+        font-weight: 600
+    &__old-cost
+        font-size: 1.4rem
+        font-weight: 600
+        text-decoration: line-through
+    &__variant-sku
+        font-family: "Roboto"
+        font-size: 1.0rem
+    &__variant-sku span
+        font-size: 1.2rem
+        font-weight: 100
+
+.actions
+    &__arrow
+        font-size: 1.5rem
+
+.description
+    &__header
+        text-align: center
+        font-size: 2rem
+    &__item
+        font-size: 2rem
+        &-header
+            font-size: 2.5rem
+    &__text
+        font-size: 1.5rem
+        line-height: 2.4rem
+        text-align: justify

@@ -1,0 +1,39 @@
+.product-card
+    grid-column: 2/12
+    grid-row: 2/3
+    display: grid
+    grid-template-columns: repeat(12, 1fr)
+    &__quick-info
+        display: flex
+        flex-direction: column
+        grid-column: 1/4
+        gap: 2rem
+        justify-content: center
+    &__header
+        display: flex
+        flex-direction: column
+        gap: .2rem
+        align-items: center
+    &__server-category
+        color: $p-gray
+    &__variant-sku span
+        color: $h-black
+    &__server-sku
+        display: flex
+        align-items: center
+        gap: .5rem
+    &__img
+        img
+            width: 100%
+            min-width: 17.5rem
+    &__name, &__server-weight, &__server-weight span
+        color: $h-black
+    &__actions-info
+        position: relative
+    &__server-cost
+        display: flex
+        flex-direction: column
+    &__current-cost, &__current-cost span
+        color: $product-sale-cost
+    &__old-cost
+        color: $product-cost

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- запрещаем поисковым роботам просматривать данную страничку -->
+     <meta name="robots" content="noindex, nofollow">
+     <link rel="stylesheet" href="css/style.min.css">
+    <title>ProductCard</title>
+</head>
+<body>
+    <article class="product-card">
+        <section class="product-card__quick-info">
+            <div class="product-card__header">
+                <h2 class="product-card__name">Ананасовый улун</h2>
+                <!-- блок для динамического обновления значения с сервера -->
+                <p class="product-card__server-category">Чай</p>
+                <div class="product-card__variant-sku">
+                    <p class="product-card__server-sku">
+                        <span>арт.:</span>
+                        <span>01306</span>
+                    </p>
+                </div>
+            </div>
+            <div class="product-card__img">
+                <img src="img/productCard_420x420.jpg" alt="productCard_420x420">
+            </div>
+            <div class="product-card__actions actions">
+                <div class="product-card__actions-info">
+                    <div class="actions__choose-weight">
+                        <span>Выберите вес:</span>
+                        <!-- блок для динамического обновления значения с сервера -->
+                        <p class="product-card__server-weight">
+                            <span>100</span>
+                            <span>г</span>
+                        </p>
+                        <span class="actions__arrow">&#9658;</span>
+                        <div class="actions__input-weight-items">
+                            <div class="actions__input-weight-item">
+                                <input type="radio" name="weight" value="">
+                                <span>100 г</span>
+                            </div>
+                            <div class="actions__input-weight-item">
+                                <input type="radio" name="weight" value="">
+                                <span>500 г</span>
+                            </div>
+                            <div class="actions__input-weight-item">
+                                <input type="radio" name="weight" value="">
+                                <span>1000 г</span>
+                            </div>
+                            <div class="actions__input-weight-item">
+                                <input type="radio" name="weight" value="">
+                                <span>5000 г</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- блок для динамического обновления значения с сервера -->
+                <div class="product-card__server-cost">
+                    <p class="product-card__current-cost">
+                        <span>326.40</span>
+                        <span>&#8381;</span>
+                    </p>
+                    <p class="product-card__old-cost">
+                        <span>349.20</span>
+                        <span>&#8381;</span>
+                    </p>
+                </div>
+                <div class="actions__add-to-cart">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640"><!--!Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                        <path d="M24 48C10.7 48 0 58.7 0 72C0 85.3 10.7 96 24 96L69.3 96C73.2 96 76.5 98.8 77.2 102.6L129.3 388.9C135.5 423.1 165.3 448 200.1 448L456 448C469.3 448 480 437.3 480 424C480 410.7 469.3 400 456 400L200.1 400C188.5 400 178.6 391.7 176.5 380.3L171.4 352L475 352C505.8 352 532.2 330.1 537.9 299.8L568.9 133.9C572.6 114.2 557.5 96 537.4 96L124.7 96L124.3 94C119.5 67.4 96.3 48 69.2 48L24 48zM208 576C234.5 576 256 554.5 256 528C256 501.5 234.5 480 208 480C181.5 480 160 501.5 160 528C160 554.5 181.5 576 208 576zM432 576C458.5 576 480 554.5 480 528C480 501.5 458.5 480 432 480C405.5 480 384 501.5 384 528C384 554.5 405.5 576 432 576z"/>
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <section class="product-card__description description">
+            <h2 class="description__header">Описание</h2>
+            <ul class="description__items">
+                <li class="description__item">
+                    <h2 class="description__item-header">Состав</h2>
+                    <p class="description__item-text">
+                        Китайский бирюзовый чай, цукаты, натуральные ароматические масла. Светлый Фуцзяньский улун с ароматом ананаса. В сухом виде — красивый крупный лист изумрудного цвета, скруткой листа напоминающий Те Гуань Инь. В прогретой посуде аромат свежей, весенней зелени и спелого ананаса. Скрученный лист медленно раскрывается, отдавая весь свой аромат. Тем, кому пришёлся по вкусу этот чай, может также понравиться связанный чай «Ананасовый рай».
+                    </p>
+                </li>
+                <li class="description__item">
+                    <h2 class="description__item-header">Вкус</h2>
+                    <p class="description__item-text">
+                        Настой прозрачный, светло-янтарного цвета. Классическая нота светлого фуцзяньского улуна переплетается c яркой ананасовой нотой.
+                    </p>
+                </li>
+                <li class="description__item">
+                    <h2 class="description__item-header">Полезные свойства</h2>
+                    <ul class="description__item-text">
+                        <li>отличный антиоксидант</li>
+                        <li>снижает уровень холестерина</li>
+                        <li>снижает лишний вес</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </article>
+</body>
+</html>

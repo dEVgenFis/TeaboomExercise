@@ -1,0 +1,29 @@
+.description
+    grid-column: 5/-1
+    background-color: $bg-product-description
+    &__header
+        color: $txt-white
+        background-color: $h-black
+        padding: 2.5rem 10rem
+    &__items
+        display: flex
+        flex-direction: column
+        gap: 3rem
+        // убираем точки у элементов списка
+        list-style: none
+        padding: 2rem
+        border: solid 1px
+        border-color: $brd-actions
+        &:hover
+            cursor: url('../icons/cup.svg'), pointer
+    &__item
+        display: flex
+        flex-direction: column
+        gap: 1rem
+        transition: transform 0.3s
+        &:hover
+            transform: translateY(-.2rem)
+        ul
+            list-style: inside
+    &__text
+        padding: 0 3rem
