@@ -6,6 +6,7 @@
     <!-- запрещаем поисковым роботам просматривать данную страничку -->
      <meta name="robots" content="noindex, nofollow">
      <link rel="stylesheet" href="css/style.min.css">
+     <script defer src="js/script.js"></script>
     <title>ProductCard</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
                 <div class="product-card__variant-sku">
                     <p class="product-card__server-sku">
                         <span>арт.:</span>
-                        <span>01306</span>
+                        <span class="product-card__sku-value">01306</span>
                     </p>
                 </div>
             </div>
@@ -31,25 +32,25 @@
                         <span>Выберите вес:</span>
                         <!-- блок для динамического обновления значения с сервера -->
                         <p class="product-card__server-weight">
-                            <span>100</span>
+                            <span class="product-card__weight-value">100</span>
                             <span>г</span>
                         </p>
                         <span class="actions__arrow">&#9658;</span>
-                        <div class="actions__input-weight-items">
+                        <div class="actions__input-weight-items" hidden>
                             <div class="actions__input-weight-item">
-                                <input type="radio" name="weight" value="">
+                                <input type="radio" name="weight" value="100" checked data-sku="01306" data-current-cost-value="326.40" data-old-cost-value="349.20">
                                 <span>100 г</span>
                             </div>
                             <div class="actions__input-weight-item">
-                                <input type="radio" name="weight" value="">
+                                <input type="radio" name="weight" value="500" data-sku="01307" data-current-cost-value="1432" data-old-cost-value="1646">
                                 <span>500 г</span>
                             </div>
                             <div class="actions__input-weight-item">
-                                <input type="radio" name="weight" value="">
+                                <input type="radio" name="weight" value="1000" data-sku="01308" data-current-cost-value="2064" data-old-cost-value="2592">
                                 <span>1000 г</span>
                             </div>
                             <div class="actions__input-weight-item">
-                                <input type="radio" name="weight" value="">
+                                <input type="radio" name="weight" value="5000" data-sku="01309" data-current-cost-value="6320" data-old-cost-value="8710">
                                 <span>5000 г</span>
                             </div>
                         </div>
@@ -58,11 +59,11 @@
                 <!-- блок для динамического обновления значения с сервера -->
                 <div class="product-card__server-cost">
                     <p class="product-card__current-cost">
-                        <span>326.40</span>
+                        <span class="product-card__current-cost-value">326.40</span>
                         <span>&#8381;</span>
                     </p>
                     <p class="product-card__old-cost">
-                        <span>349.20</span>
+                        <span class="product-card__old-cost-value">349.20</span>
                         <span>&#8381;</span>
                     </p>
                 </div>

@@ -11,9 +11,15 @@
         gap: 1rem
         align-items: center
     &__arrow
-        padding: 1rem 1rem 1rem 0
+        // "расширяем" элемент для удобства клика
+        padding: 1rem
+        // "1rem" - gap внутри родителя (целевой отступ)
+        // "2rem" = gap внутри родителя + "1rem" - padding самого элемента
+        margin-left: calc( 1rem - 2rem )
         &:hover
             cursor: pointer
+        &.active
+            transform: rotate(90deg)
     &__input-weight-items
         position: absolute
         right: 0
