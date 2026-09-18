@@ -3,9 +3,16 @@
     justify-content: space-between
     align-items: center
     background: $bg-actions
+    min-width: max-content
     padding: .5rem
     border: solid 1px
     border-color: $brd-actions
+    gap: 1rem
+    @include respond(laptop)
+        flex-direction: column
+        gap: 0
+    @include respond(tablet)
+        justify-content: center
     &__choose-weight
         display: flex
         gap: 1rem
@@ -16,6 +23,7 @@
         // "1rem" - gap внутри родителя (целевой отступ)
         // "2rem" = gap внутри родителя + "1rem" - padding самого элемента
         margin-left: calc( 1rem - 2rem )
+        margin-right: calc( 1rem - 2rem )
         &:hover
             cursor: pointer
         &.active
@@ -24,14 +32,22 @@
         position: absolute
         right: 0
         top: 90%
+        min-width: max-content
         padding: .3rem
         background-color: $bg-product-description
         display: flex
         flex-direction: column
-        gap: .3rem
+        gap: .5rem
         border: solid 1px
         border-color: $brd-actions
         cursor: pointer
+        @include respond(laptop)
+            left: 80%
+            gap: .8rem
+        @include respond(tablet)
+            left: 50%
+        @include respond(mobile)
+            left: 90%
     &__input-weight-item
         display: flex
         justify-content: space-between

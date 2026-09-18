@@ -3,17 +3,34 @@
     grid-row: 2/3
     display: grid
     grid-template-columns: repeat(12, 1fr)
+    @include respond(tablet)
+        gap: 2rem
+    @include respond(mobile)
+        gap: 1rem
     &__quick-info
         display: flex
         flex-direction: column
         grid-column: 1/4
         gap: 2rem
         justify-content: center
+        min-width: min-content
+        @include respond(laptop)
+            justify-content: start
+        @include respond(tablet)
+            grid-column: 1/-1
+            flex-direction: row
+            gap: 1rem
+        @include respond(mobile)
+            flex-direction: column
+        @include respond(mobile)
+            gap: .5rem
     &__header
         display: flex
         flex-direction: column
         gap: .2rem
         align-items: center
+        @include respond(tablet)
+            justify-content: center
     &__server-category
         color: $p-gray
     &__variant-sku span
@@ -26,13 +43,19 @@
         img
             width: 100%
             min-width: 17.5rem
+    &__name
+        min-width: max-content
     &__name, &__server-weight, &__server-weight span
         color: $h-black
     &__actions-info
         position: relative
+        min-width: max-content
     &__server-cost
         display: flex
         flex-direction: column
+        min-width: max-content
+        @include respond(laptop)
+            margin-bottom: 1rem
     &__current-cost, &__current-cost span
         color: $product-sale-cost
     &__old-cost

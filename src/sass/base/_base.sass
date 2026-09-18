@@ -1,9 +1,12 @@
 @mixin respond($breakpoint)
     @if $breakpoint == mobile
-        @media screen and ( max-width: 375px )
+        @media screen and ( max-width: 550px )
             @content
     @if $breakpoint == tablet
-        @media screen and ( min-width: 376px ) and ( max-width: 768px )
+        @media screen and ( max-width: 768px )
+            @content
+    @if $breakpoint == laptop
+        @media screen and ( max-width: 1240px )
             @content
 
 *, ::after, ::before
@@ -12,7 +15,6 @@
     box-sizing: border-box
 
 body
-    // height: 100vh
     display: grid
     grid-template-columns: repeat(12, 1fr)
     grid-template-rows: 4rem minmax(10rem, 40rem) 4rem

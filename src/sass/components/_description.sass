@@ -1,6 +1,8 @@
 .description
     grid-column: 5/-1
     background-color: $bg-product-description
+    @include respond(tablet)
+        grid-column: 1/-1
     &__header
         color: $txt-white
         background-color: $h-black
@@ -16,6 +18,8 @@
         border-color: $brd-actions
         &:hover
             cursor: url('../icons/cup.svg'), pointer
+        @include respond(laptop)
+            gap: 2.5rem
     &__item
         display: flex
         flex-direction: column
